@@ -1,0 +1,337 @@
+<extend name="Layout/default" />
+<block name="title">{:L('ABOUT_US')}</block>
+
+<block name="content">
+    <div class="index p2_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="topbox">
+                        <h2>{$data['title']}</h2>
+                        <!-- <p>嘉莱克西公司专注于太阳能光热发电系统解决方案服务，持续为人类提供清洁能源。</p>
+                        <p>
+                            太阳能光热电站的工程勘测、建设、安装和运营维护；太阳能热利用的蒸汽、热水锅炉的设计、零配件组装、安装施工等。致力于为客户提供从“项目咨询、工程设计、设备成套、项目建设、项目管理到电站运营维护”的全过程服务。
+                        </p> -->
+                        {$data['description']}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 item">
+                    <div class="wrap">
+                        <img src="__IMG__/introitem_1.png">
+                        <p>项目咨询&nbsp;&nbsp;&nbsp;&nbsp;工程设计</p>
+                        <div class="mask_bg"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="wrap">
+                        <img src="__IMG__/introitem_2.png">
+                        <p>设备成套&nbsp;&nbsp;&nbsp;&nbsp;项目建设</p>
+                        <div class="mask_bg"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="wrap">
+                        <img src="__IMG__/introitem_3.png">
+                        <p>项目管理&nbsp;&nbsp;&nbsp;&nbsp;运营维护</p>
+                        <div class="mask_bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="next_btn"><img src="__IMG__/btn_next.png"></a>
+    </div>
+    <div class="index p2_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>企业文化</h2>
+                </div>
+            </div>
+            <div class="row">
+                <foreach name="company_culture" item="vo">
+                    <div class="col-md-4 item">
+                        <div class="item_wrap">
+                            <img src="{$vo['image']}">
+                            <div class="tit">{$vo['name']}</div>
+                            <p>{$vo['summary']}</p>
+                            <div class="mask_bg"></div>
+                        </div>
+                    </div>
+                </foreach>
+                <!-- <div class="col-md-4 item">
+                    <div class="item_wrap">
+                        <img src="__IMG__/intro_3.png">
+                        <div class="tit">尽&nbsp;&nbsp;责</div>
+                        <p>嘉莱克西是一个富有责任感的企业，员工对企业讲责任，企业对员工和社会讲责任。对工作负责就是讲敬业，对企业负责就是忠诚，对客户和合作者负责就是守信。不负责的员工将被企业所淘汰，不负责任的企业将被社会所淘汰</p>
+                        <div class="mask_bg"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="item_wrap">
+                        <img src="__IMG__/intro_4.png">
+                        <div class="tit">团&nbsp;&nbsp;队</div>
+                        <p>嘉莱克西是一个富有责任感的企业，员工对企业讲责任，企业对员工和社会讲责任。对工作负责就是讲敬业，对企业负责就是忠诚，对客户和合作者负责就是守信。不负责的员工将被企业所淘汰，不负责任的企业将被社会所淘汰</p>
+                        <div class="mask_bg"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="item_wrap">
+                        <img src="__IMG__/intro_5.png">
+                        <div class="tit">创&nbsp;&nbsp;新</div>
+                        <p>嘉莱克西是一个富有责任感的企业，员工对企业讲责任，企业对员工和社会讲责任。对工作负责就是讲敬业，对企业负责就是忠诚，对客户和合作者负责就是守信。不负责的员工将被企业所淘汰，不负责任的企业将被社会所淘汰</p>
+                        <div class="mask_bg"></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>  
+    <div class="index p2_3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>成长历程</h2>
+                </div>
+            </div>
+            <div class="row time_axis">
+                <div class="col-md-6 left">
+                    <!-- 左上 -->
+                    <div class="col-md-12 top item">
+                        <div class="wrap_left">
+                            <div class="time">2016年6月4日</div>
+                            <div class="intro">
+                                与多家大型投资机构签订融资协议
+                                <div class="btn_wrap">
+                                    <a href="javascript:void(0)" class="btn_more">MORE+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap_right"></div>
+                        <div class="dot">
+                            <img src="__IMG__/intro_dot1.png">
+                        </div>
+                        <div class="tip">
+                            <p>签订协议的大型投资机构包括IDG资本</p>
+                            <p>中国建银投资有限责任公司</p>
+                            <p>摩根土丹利国际公司</p>
+                            <p>中国投资担保有限公司</p>
+                            <p>新加坡政府投资有限公司</p>
+                        </div>
+                    </div>
+                    <!-- 左下 -->
+                    <div class="col-md-12 bottom item">
+                        <div class="wrap_left">
+                            <div class="time">2015年10月24日</div>
+                            <div class="intro">
+                                嘉莱克西太阳能有限公司沙特办事处成立
+                                <div class="btn_wrap">
+                                    <a href="javascript:void(0)" class="btn_more">MORE+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap_right"></div>
+                        <div class="dot">
+                            <img src="__IMG__/intro_dot1.png">
+                        </div>
+                        <div class="tip">
+                            <p>签订协议的大型投资机构包括IDG资本</p>
+                            <p>中国建银投资有限责任公司</p>
+                            <p>摩根土丹利国际公司</p>
+                            <p>中国投资担保有限公司</p>
+                            <p>新加坡政府投资有限公司</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 right">
+                    <div class="col-md-12 top item">
+                        <div class="wrap_left"></div>
+                        <div class="wrap_right">
+                            <div class="time">2016年1月13日</div>
+                            <div class="intro">
+                                嘉莱克西太阳能有限公司获得千万级A轮融资
+                                <div class="btn_wrap">
+                                    <a href="javascript:void(0)" class="btn_more">MORE+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dot">
+                            <img src="__IMG__/intro_dot1.png">
+                        </div>
+                        <div class="tip">
+                            <p>签订协议的大型投资机构包括IDG资本</p>
+                            <p>中国建银投资有限责任公司</p>
+                            <p>摩根土丹利国际公司</p>
+                            <p>中国投资担保有限公司</p>
+                            <p>新加坡政府投资有限公司</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 bottom item">
+                        <div class="wrap_left"></div>
+                        <div class="wrap_right">
+                            <div class="time">2015年4月13日</div>
+                            <div class="intro">
+                                嘉莱克西太阳能有限公司在北京成立
+                                <div class="btn_wrap">
+                                    <a href="javascript:void(0)" class="btn_more">MORE+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dot big">
+                            <img src="__IMG__/intro_dot2.png">
+                        </div>
+                        <div class="tip">
+                            <p>签订协议的大型投资机构包括IDG资本</p>
+                            <p>中国建银投资有限责任公司</p>
+                            <p>摩根土丹利国际公司</p>
+                            <p>中国投资担保有限公司</p>
+                            <p>新加坡政府投资有限公司</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+
+<block name="footer">
+    <div class="foot">ICP备案编号：京ICP备10000000号 版本所有 嘉莱克西太阳能有限公司</div>
+</block>
+
+<block name="js">
+
+<script type="text/javascript">
+$(function(){
+    var li_idx,page_idx,wheel_id=0;
+    var is_finished = true;
+    $(document.body).animate({
+        scrollTop:"0"
+    })
+// 页面滚动
+    var scrollFunc = function(e){
+        var e = event || window.event; 
+        e.preventDefault();
+        if(is_finished){
+            if(e.wheelDelta<0){                    
+                //滚轮下滑      
+                if(typeof(li_idx) == "undefined"){ 
+                //直接是滚动事件开始的
+                    if(wheel_id<2){
+                        page_idx = wheel_id;
+                        scroll_nextP();
+                    }
+                }else{                          
+                //滚动前已经存在过点击事件
+                    if(li_idx!=2){
+                        page_idx = li_idx;      //滚动事件引用点击事件的上次点击li索引
+                        li_idx++;
+                        scroll_nextP();
+                    }                 
+                }
+
+            }else if(e.wheelDelta>0){       
+                //滚轮上滑      
+                if(typeof(li_idx) == "undefined"){
+                //直接是滚动事件开始的
+                    if(wheel_id>0){
+                        page_idx = wheel_id;
+                        scroll_lastP();
+                    }
+                }else{                          
+                //滚动前已经存在过点击事件
+                    if(li_idx!=0){
+                        page_idx = li_idx;      //滚动事件引用点击事件的上次点击li索引
+                        li_idx--;
+                        scroll_lastP();
+                    }                 
+                }
+            }
+        }
+    }
+
+//滚动触发的事件函数 
+    function scroll_nextP(){
+        is_finished = false;
+        page_idx++;
+        wheel_id++; 
+        console.log("-->"+page_idx);
+        var page_offset_top = $('.index').eq(page_idx).offset().top;
+        $(document.body).animate({
+            scrollTop:page_offset_top
+        },500)
+        
+        setTimeout(function(){
+            is_finished = true;
+        },500)
+    }
+    function scroll_lastP(){
+        is_finished = false;
+        page_idx--;
+            
+        wheel_id--;
+        console.log("-->"+page_idx);
+        var page_offset_top = $('.index').eq(page_idx).offset().top;
+        $(document.body).animate({
+            scrollTop:page_offset_top
+        },500)
+        
+        setTimeout(function(){
+            is_finished = true;
+        },500)
+    }
+
+// 注册滚轮事件方法
+    function regist_mousewheel(){
+        //非IE 
+        if(document.addEventListener && !document.attachEvent) 
+        { 
+            document.addEventListener('mousewheel',scrollFunc); 
+            //FF绑定滚动事件 
+            document.addEventListener('DOMMouseScroll',scrollFunc); 
+        } 
+        //IE
+        else if(document.attachEvent && !document.addEventListener){ 
+            document.attachEvent('onmousewheel',scrollFunc); 
+        }else{ 
+            window.onmousewheel = scrollFunc; 
+        }
+    }
+
+// 注销滚轮事件方法
+    function concel_mousewheel(){
+        //非IE 
+        if(document.removeEventListener && !document.detachEvent) 
+        { 
+            document.removeEventListener('mousewheel',scrollFunc); 
+            //FF绑定滚动事件 
+            document.removeEventListener('DOMMouseScroll',scrollFunc); 
+        } 
+        //IE
+        else if(document.detachEvent && !document.removeEventListener){ 
+            document.attachEvent('onmousewheel',scrollFunc); 
+        }else{ 
+            window.onmousewheel = ""; 
+        }
+    }
+
+// 执行页面滚轮绑定
+    regist_mousewheel();
+
+//点击下一页触发的页面滑动事件
+    $('.next_btn').click(function(){
+        li_idx = $(this).parents('.index').index();
+        var index = $(this).parents('.index').index();
+        $(document.body).animate({
+            scrollTop:$('.index').eq(index).offset().top
+        })
+    })
+ // hover 显示详情
+    $('.p2_3 .container .time_axis .intro .btn_wrap .btn_more').hover(function(){
+            $(this).parents('.item').children('.tip').show();
+        },function(){
+            $(this).parents('.item').children('.tip').hide();
+    })
+})
+</script>
+
+</block>

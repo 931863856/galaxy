@@ -1,0 +1,114 @@
+<extend name="Layout/default" />
+<block name="title">{$data.name} - {:L('TREND')}</block>
+
+<block name="content">
+
+    <div class="p7_detail">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-2 left">
+                <div class="head">
+                    <h4>{$data['name']}</h4>
+                    <div class="info">
+                        <!-- <img src="__IMG__/new_logo.png"> -->
+                        <!-- <span class="name">{$data['editor']}</span> ● 59分钟前 -->
+                        {$data['date_modified']}
+                    </div>
+                </div>
+                <div class="banner">
+                    <img src="{$data['image']}">
+                </div>
+                <div class="content">
+                    <p>
+                        <!-- 国际能源署（IEA）预测到2050年全球光热发电的装机将达到830GW，其中中国100GW，如果这个目标能够实现光热发电将是数十万亿市场规模的行业。2015年全球并网太阳能光热发电总装机容量4940兆瓦，预计2020年将达到42000兆瓦，超过10倍的增长速度，产业发展潜力巨大。2015年6月，国际可再生能源机构（Irena）总部大楼在阿联酋马斯达尔城揭幕，这是首个国际政府间组织总部在中东地区落户，目的是推动绿色能源的广泛应用。2015年中东北非地区太阳能发电爆发式增长，该地区日照充足，太阳能产品市场开放度高，贸易摩擦少，具备发展太阳能先天优势。据中东太阳能产业联合会（Mesia）预计，2015年中东北非地区有1800兆瓦太阳能项目招标或授标，规模同比增长6倍，项目总金额达27亿美元，阿联酋、埃及、约旦、埃及、摩洛哥、沙特阿拉伯、卡塔尔等11个国家制定了光热发电目标。中东北非地区光热发电成本优势显著： 2008年太阳能项目建设成本约7美元/瓦，到2014年已降至1.5美元/瓦以下。天然气是中东北非地区发电的主力能源，2010年前生产或进口天然气价格不到2美元/百万英热单位，如今已涨至8美元/百万英热单位。而太阳能发电成本大致相当于4美元/百万英热单位的水平，成本优势凸显。另外在中东北非地区，石油主要用于交通和出口，与太阳能发电不构成直接竞争关系。按照IEA预测，中国光热发电市场到2020年将达到5GW装机，2030年将达到29GW装机，2040年翻至88GW装机，到2050年将达到118GW装机，成为全球继“美国、中东、印度、非洲”之后的第四大市场，中国这个万亿级的市场才刚刚拉开帷幕。国家能源局计划光热电站示范项目电价政策预计2016年上半年出台，在此基础上，预计2017年热电将进入大规模开发建设阶段；未来的两年将是国内光热完成规划目标的高速建设期；按照目前30元/瓦的单价，光热市场需求每年将达300 亿元，到2020年实现5GW光热发电装机市场需求超1500亿元。 -->
+                        {$data['description']}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 right">
+                <div class="wrap">
+                    <div class="cata">
+                        行业动态
+                    </div>
+                    <ul>
+                        <foreach name="company_news" item="vo">
+                            <a href="{:U('news_detail')}?id={$vo['article_id']}">
+                                <li>
+                                    <div class="img_wrap">
+                                        <img src="{$vo['image']}">
+                                    </div>
+                                    <p class="txt">{$vo['summary']}</p>
+                                </li>
+                            </a>
+
+                        </foreach>
+                        <!-- <li>
+                            <div class="img_wrap">
+                                <img src="__IMG__/new_li1.jpg">
+                            </div>
+                            <p class="txt">知乎鼻祖“Quora”回去Marc Bodnick这员大将后将走向何方？</p>
+                        </li>
+                        <li>
+                            <div class="img_wrap">
+                                <img src="__IMG__/new_li2.jpg">
+                            </div>
+                            <p class="txt">惠山街道有个“共建委员会” 为民办实事80多件服务6万多居民</p>
+                        </li>
+                        <li>
+                            <div class="img_wrap">
+                                <img src="__IMG__/new_li3.jpg">
+                            </div>
+                            <p class="txt">知乎鼻祖“Quora”回去Marc Bodnick这员大将后将走向何方？</p>
+                        </li>
+                        <li>
+                            <div class="img_wrap">
+                                <img src="__IMG__/new_li4.jpg">
+                            </div>
+                            <p class="txt">知乎鼻祖“Quora”回去Marc Bodnick这员大将后将走向何方？</p>
+                        </li>
+                        <li>
+                            <div class="img_wrap">
+                                <img src="__IMG__/new_li5.jpg">
+                            </div>
+                            <p class="txt">知乎鼻祖“Quora”回去Marc Bodnick这员大将后将走向何方？</p>
+                        </li>
+                        <li>
+                            <div class="img_wrap">
+                                <img src="__IMG__/new_li6.jpg">
+                            </div>
+                            <p class="txt">知乎鼻祖“Quora”回去Marc Bodnick这员大将后将走向何方？</p>
+                        </li>
+                        <li>
+                            <div class="img_wrap">
+                                <img src="__IMG__/new_li7.jpg">
+                            </div>
+                            <p class="txt">知乎鼻祖“Quora”回去Marc Bodnick这员大将后将走向何方？</p>
+                        </li> -->
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</block>
+
+<block name="footer">
+    <div class="footer">ICP备案编号：京ICP备10000000号 版本所有 嘉莱克西太阳能有限公司</div>
+</block>
+
+<block name="js">
+
+<script type="text/javascript">
+    var right_height = $('.p7_detail>.row').height();
+    $('.p7_detail>.row .right').height(right_height);
+</script>
+<style type="text/css">
+    body{
+        overflow:auto;
+    }
+    html, body {
+        height: auto;
+    }
+</style>
+
+</block>
